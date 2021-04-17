@@ -35,7 +35,7 @@ for tz in countries:
         tz_to_display = pytz.timezone(chosen_zone)
         time_in_chosen = datetime.datetime.now(tz=tz_to_display)
         print("You chose: {}". format(countries[choice]))
-        print("Here is the time in that part of the world: {} {}".format(time_in_chosen.strftime("%A %x %X %z"), time_in_chosen.tzname()))
+        print("Here is the time in that part of the world: {} {}".format(time_in_chosen.strftime("%A %x %X %z")))
 
         print("-"*40)  # showing the local time
 
