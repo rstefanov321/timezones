@@ -40,12 +40,12 @@ for tz in countries:
         print("-"*40)  # showing the local time
 
         local_time = datetime.datetime.now()
-        print("Your local time is {}".format(local_time.strftime("%A %x %X %z")))
+        print("Your local time is {}".format(local_time.strftime("%A %x %X")))
 
         print("-"*40)  # showing the UTC time.
 
         utc_time = datetime.datetime.utcnow()
-        print("And the UTC time is {}.".format(utc_time.strftime("%A %x %X %z")))
+        print("And the UTC time is {}.".format(utc_time.strftime("%A %x %X")))
         print()
         choice = int(input("Please choose a timezone or 0 to quit: "))
 
