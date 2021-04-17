@@ -33,7 +33,7 @@ for tz in countries:
     if 1 <= choice <= len(countries.keys()):  # setting the steps to complete if choice is valid
         chosen_zone = countries[choice]
         tz_to_display = pytz.timezone(chosen_zone)
-        time_in_chosen = datetime.datetime.now(tz_to_display)
+        time_in_chosen = datetime.datetime.now(tz=tz_to_display)
         print("You chose: {}". format(countries[choice]))
         print("Here is the time in that part of the world: {}".format(time_in_chosen))
 
